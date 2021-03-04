@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(
+            ['io.github.bonigarcia:webdrivermanager:3.8.1'],
+            ['org.seleniumhq.selenium:selenium-java:3.141.59'],
+            ['junit:junit:4.13.1']
+    )
+}
