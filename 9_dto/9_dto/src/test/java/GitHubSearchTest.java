@@ -45,7 +45,7 @@ public class GitHubSearchTest {
         homePage.searchComponent().performSearch(SEARCH_PHRASE);
 
         List<SearchResultItem> actualItems = searchResultsPage.searchResultsItems();
-        List<SearchResultItem> expectedItems = searchResultsPage.searchResultsItemsWithText("invalid search phrase");
+        List<SearchResultItem> expectedItems = searchResultsPage.searchResultsItemsWithText(SEARCH_PHRASE);
 
         Assertions.assertEquals(expectedItems, actualItems);
     }
